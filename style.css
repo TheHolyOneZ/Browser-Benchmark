@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1c1c3c, #4c86d1);
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 50, 0.9);
+    text-align: center;
+    width: 95%;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #c2d6f9;
+}
+
+.controls .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+button {
+    background: linear-gradient(135deg, #0066cc, #00ccff);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #00ccff, #0066cc);
+}
+
+#visualization {
+    margin: 30px 0;
+}
+
+canvas {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+}
+
+.spinner {
+    display: none;
+    margin: 20px auto;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top: 5px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

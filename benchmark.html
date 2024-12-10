@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheZ's Performance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Browser Performance Tester</h1>
+            <p>Made By TheZ!</p>
+        </header>
+
+        <div class="controls">
+            <div class="grid">
+
+                <button id="cpuTest" class="test-button">CPU Test</button>
+                <button id="memoryTest" class="test-button">Memory Test</button>
+                
+                <button id="networkTest" class="test-button">Network Latency</button>
+                <button id="webglTest" class="test-button">WebGL Test</button>
+                
+                <button id="indexedDbTest" class="test-button">IndexedDB Test</button>
+                <button id="storageTest" class="test-button">Storage Test</button>
+                
+                <button id="workerTest" class="test-button">Worker Test</button>
+                
+                <button id="domTest" class="test-button">DOM Test</button>
+                <button id="renderTest" class="test-button">Rendering Test</button>
+                
+                <button id="fpsTest" class="test-button">FPS Test</button>
+                <button id="animationTest" class="test-button">Animation Test</button>
+                
+                <button id="sortTest" class="test-button">Sort Test</button>
+                <button id="jsonTest" class="test-button">JSON Test</button>
+                
+                <button id="canvasTest" class="test-button">Canvas Test</button>
+            </div>
+        </div>
+
+        <div class="results-container">
+            <div id="visualization" class="chart-container">
+                <canvas id="resultChart"></canvas>
+            </div>
+
+            <div class="status-container">
+                <div id="spinner" class="spinner"></div>
+                <p id="status">Click a button to start testing...</p>
+            </div>
+
+            <div id="testResults" class="test-results"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
